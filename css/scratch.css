@@ -1,0 +1,118 @@
+
+body {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #ce711b;
+}
+
+.content {
+    width: 90%;
+    max-width: 600px;
+    margin: 50px auto;
+    text-align: center;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.image-frame {
+    margin: 20px 0;
+}
+
+.image-frame img {
+    width: 100%;  
+    max-width: 500px;
+    border-radius: 8px;
+}
+
+h1 {
+    font-size: 2em;
+    color: #333;
+}
+
+h2 {
+    font-size: 1.5em;
+    color: #555;
+}
+
+.centered-list {
+    padding-left: 0;
+    text-align: left;
+    display: table;
+    margin: 0 auto;
+}
+
+.centered-list li {
+    margin: 10px 0;
+    padding-left: 1.2em;
+    position: relative;
+}
+
+.centered-list ul {
+    margin-top: 5px;
+    padding-left: 20px;
+}
+
+.centered-list ol {
+    counter-reset: item;
+    padding-left: 0;
+}
+
+.centered-list ol > li {
+    list-style-type: none;
+    counter-increment: item;
+}
+
+.centered-list ol > li::before {
+    content: counter(item) ". ";
+    font-weight: bold;
+    position: absolute;
+    left: 0;
+}
+
+a {
+    display: inline-block;
+    margin: 10px 0;
+    color: #3366cc;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.video-frame {
+    text-align: center;
+    margin: 30px 0;
+}
+
+.video-frame iframe {
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.15);
+}
+
+.tableauPlaceholder {
+    position: relative;
+    width: 50%;
+    max-width: 500px; /* Adjust the max width as needed */
+    margin: 0 auto;
+}
+
+.tableauViz {
+    width: 100%; /* Make it responsive */
+    height: 500px; /* Adjust based on content and screen size */
+    border: none;
+}
+
+/* Adjust the iframe container */
+.video-frame {
+    margin: 30px 0;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 10px;
+}
